@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getData()">
+    <div class="frame">
+        <input type="text" id="input" placeholder="Enter City Name" value="Nashik" onchange="getData()">
+        
+        <p class="dd">--<sup>°</sup></p>
+        <p class="ptag">Celsius</p>
+        <p class="ptag">Wind Speed: <span id="ws">--</span> km/h</p>
+        <p class="ptag">Humidity: <span id="hmdty">--</span>%</p>
+
+        <img src="weather.png" alt="Weather Icon" id="img">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -11,8 +11,6 @@ async function getData() {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 
-    
-
     try {
         let response = await fetch(url);
         let data = await response.json();
@@ -22,8 +20,6 @@ async function getData() {
             return;
         }
 
-
-        
         
         document.querySelector(".dd").innerHTML = `${Math.round(data.main.temp)}<sup>°</sup>`;
         document.querySelector(".ptag").innerText = "Celsius";
